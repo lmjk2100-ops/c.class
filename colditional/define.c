@@ -1,0 +1,19 @@
+﻿#include <stdio.h>
+#define TAX_RATE	0.2 //상호상수 선언		//전처리단게에서 철
+int main(void)
+{	
+	const int MONTHS = 12; //기호상수 선언
+	//컴파일러 단게에서 처리 블록안에서만 유효
+	int m_salary, y_salary; // 변수 선언
+
+
+	printf("월급을 입력하시오");	// 입력 안내문
+	scanf_s("%d", &m_salary);
+
+	y_salary = MONTHS * m_salary;	// 순수입 게산
+	printf("연봉은 %d입니다.\n", y_salary);
+	printf("세금은 %.2f입니다.\n", y_salary * TAX_RATE);
+
+
+	return 0;
+}
