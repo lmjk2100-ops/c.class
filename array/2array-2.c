@@ -8,7 +8,7 @@ int main(void)
     for (i = 0; i < 3; i++) { //0~2
         printf("과일 이름을 입력하세요: ");
         scanf("%s", fruit[i]);
-        printf("%d 번째 과일은: %s \n", i, fruit[i]); //menu[i]는 행을 의미
+        printf("%d 번째 과일은: %s \n", i, fruit[i]); //menu[i]는 행을 의미함
 
     }
 
